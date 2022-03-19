@@ -10,6 +10,8 @@ import Sidebar from './Mainpage/Sidebar';
 import Dashboard1 from "./Pages/Dashboard/dashboadrd";
 import Homepage1 from "./Pages/Homepage/homepage";
 import Addclient1 from "./Pages/Addclients/Addclients";
+import Appoin from "./Components/Appointment/appointmentview";
+import Add from "./Components/Appointment/addappointment";
 
 
 
@@ -25,6 +27,8 @@ const App=()=>{
 <Route path="/mainpage" exact element={<Sidebar/>}/>
 <Route path="/addclient" exact element={<Addclient1/>}/>
 <Route path="/dashboard" exact element={<Dashboard1/>}/>
+<Route path="/viewappointment" exact element={<Appoin/>}/>
+<Route path="/addappointment" exact element={<Add/>}/>
 <Route path="/" element={<Navigate replace to="/homepage" />} />
 
 
