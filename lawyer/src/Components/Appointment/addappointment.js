@@ -1,7 +1,9 @@
 import React from 'react';
-import ReactDom from "react-dom";
 import './add.css';
-const Add = (
+const Add=()=>
+
+{  return(
+
     <form>
         <br/>
         <h2>Add Appoinment</h2>
@@ -44,5 +46,6 @@ const Add = (
     </form>
     
 );
-ReactDom.render(Add, document.getElementById('root'));
+};
+
 export default Add;

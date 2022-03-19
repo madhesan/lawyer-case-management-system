@@ -2,7 +2,9 @@ import React from 'react';
 import './add.css';
 import {Link} from "react-router-dom";
 
-const Appoin = (
+const Appoin=()=>
+
+{  return(
 
         <table>
            
@@ -52,5 +54,6 @@ const Appoin = (
             </div>
     </table>
     );
+};
 
 export default Appoin;
