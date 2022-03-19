@@ -29,7 +29,6 @@ const App=()=>{
 <Route path="/logout" exact element={<Logout1/>}/>
 <Route path="/" element={<Navigate replace to="/homepage" />} />
 
-
     </Routes>
     )
 };
