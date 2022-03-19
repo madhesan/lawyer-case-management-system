@@ -10,6 +10,7 @@ import Sidebar from './Mainpage/Sidebar';
 import Dashboard1 from "./Pages/Dashboard/dashboadrd";
 import Homepage1 from "./Pages/Homepage/homepage";
 import Addclient1 from "./Pages/Addclients/Addclients";
+import Logout1 from "./Pages/Logout/logout";
 
 
 
@@ -25,6 +26,7 @@ const App=()=>{
 <Route path="/mainpage" exact element={<Sidebar/>}/>
 <Route path="/addclient" exact element={<Addclient1/>}/>
 <Route path="/dashboard" exact element={<Dashboard1/>}/>
+<Route path="/logout" exact element={<Logout1/>}/>
 <Route path="/" element={<Navigate replace to="/homepage" />} />
 
 
