@@ -3,9 +3,9 @@ import HomeIcon from '@mui/icons-material/Home';
 import DashboardRoundedIcon from '@mui/icons-material/DashboardRounded';
 import GavelIcon from '@mui/icons-material/Gavel';
 import ManIcon from '@mui/icons-material/Man';
-import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import SettingsIcon from '@mui/icons-material/Settings';
+import LogoutIcon from '@mui/icons-material/Logout';
 export const SidebarData =[
     {
         title:"Home",
@@ -28,18 +28,18 @@ export const SidebarData =[
         link:"/addclient"
     },
     {
-        title:"Income",
-        icon:<CurrencyRupeeIcon />,
-        link:"/rupee"
-    },
-    {
         title:"Appoinment",
         icon:<EventAvailableIcon />,
-        link:"/appoinment"
+        link:"/viewappointment"
     },{
         title:"Settings",
         icon:<SettingsIcon />,
         link:"/settings"
+    },
+    {
+        title:"Logout",
+        icon:<LogoutIcon />,
+        link:"/logout"
     },
 
 ];

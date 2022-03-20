@@ -1,6 +1,6 @@
 import React from "react";
 import './home.css';
-
+import image from "../../img/court.jpg"; 
 
 
 
@@ -11,7 +11,7 @@ const User = localStorage.getItem("name");
     return (
        
             
-    <div className="App">
+    <div className="App" style={{ backgroundImage:`url(${image})`,backgroundRepeat: 'no-repeat',width:'168.5vh', height:'101.5vh',backgroundSize:'cover' }}>
         <h1>Welcome {User}</h1>
      
                 
