@@ -6,7 +6,12 @@ import ManIcon from '@mui/icons-material/Man';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
+const handleLogout = () => {
+    localStorage.removeItem("token");
+    window.location.reload();
+};
 export const SidebarData =[
+    
     {
         title:"Home",
         icon:<HomeIcon />,
@@ -18,19 +23,20 @@ export const SidebarData =[
         link:"/dashboard"
     },
     {
-        title:"Cases",
-        icon:<GavelIcon />,
-        link:"/case"
-    },
-    {
         title:" Clients",
         icon:<ManIcon />,
         link:"/addclient"
     },
     {
+        title:"Cases",
+        icon:<GavelIcon />,
+        link:"/mycase"
+    },
+    
+    {
         title:"Appoinment",
         icon:<EventAvailableIcon />,
-        link:"/viewappointment"
+        link:"/appointment"
     },{
         title:"Settings",
         icon:<SettingsIcon />,
@@ -38,8 +44,10 @@ export const SidebarData =[
     },
     {
         title:"Logout",
-        icon:<LogoutIcon />,
-        link:"/logout"
+        icon:<LogoutIcon/>,
+        link:"/login",
+        onclick:{handleLogout}
+        
     },
 
 ];

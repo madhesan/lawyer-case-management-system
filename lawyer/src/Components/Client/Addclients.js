@@ -52,44 +52,35 @@ const Addclients = () => {
 
      return (
             
-                        <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit}>
                               
-                  <div className='dash' >
-                        <div className='wrapper'>
-                              <div className='left'>
-                                     </div>
-                                    <div className='center'>
-                                      <div className='center1'>
-                                              
-                                      <FaUserAlt style={{color: 'red', fontSize: '50px'}}/><label className='client'>Client Registartion</label> 
-                                    
-                          <input
+            <div className='dash' >
+                <div className='wrapper'>
+                      <div className='center'>
+                          <div className='center1'>
+                              <FaUserAlt style={{color: 'red', fontSize: '50px'}}/><label className='client'>Client Registartion</label> 
+                        <input
                         className='aname'
-                       
                         type="text"
                         placeholder="  Client Name"
                         name="name"
                         onChange={handleChange}
                         value={data.name}
-                        required  /><br/>  
-                          
+                        required  />
+                        <br/>  
 
-                  <input
+                       <input
 
-                  type="text"
-                  className='fname'
-                  placeholder=" Father Name"
-                  name="fathername"
-                  onChange={handleChange}
-                  value={data.fathername}
-                  required
-                  /><br/> 
+                       type="text"
+                       className='fname'
+                       placeholder=" Father Name"
+                       name="fathername"
+                       onChange={handleChange}
+                       value={data.fathername}
+                       required
+                       /><br/> 
                   
-                 
-                  
-                  
-                  
-                  <div className='radiobutton'>
+                      <div className='radiobutton'>
 <input
 
 type="radio"
