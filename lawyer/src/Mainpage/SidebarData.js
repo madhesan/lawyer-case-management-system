@@ -40,12 +40,12 @@ export const SidebarData =[
     },{
         title:"Settings",
         icon:<SettingsIcon />,
-        link:"/settings"
+        link:"/setting"
     },
     {
         title:"Logout",
         icon:<LogoutIcon/>,
-        link:"/login",
+        link:"/",
         onclick:{handleLogout}
         
     },

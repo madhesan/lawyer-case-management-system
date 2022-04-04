@@ -5,11 +5,12 @@ import axios from "axios";
 import {useNavigate } from "react-router-dom";
 const Addcases = () => {
   
-        function refreshPage() {
-          window.location.reload(false);
-        }
+        // function refreshPage() {
+        //   window.location.reload(false);
+        // }
         const User = localStorage.getItem("token");
         const [foodList,setFoodList] = useState([])
+        const [caseType,setCaseType] = useState([])
 
         useEffect(() => {
           axios.get(`http://localhost:8080/api/users/read/${User}`).then((response) => {
@@ -17,12 +18,16 @@ const Addcases = () => {
             console.log(response.data);
           });
         }, []) ;
+
+
+        useEffect(() => {
+          axios.get(`http://localhost:8080/api/users/read1/${User}`).then((response) => {
+            setCaseType(response.data);
+            console.log(response.data);
+          });
+        }, []) ;
       
     
-
-
-  
- console.log(User.data);
     const [data, setData] = useState({
   	ClientName: "",
     rname:"",
@@ -74,11 +79,12 @@ return (
                                      <div className='ccenter1'>
               
                    <label>Client Name :</label> 
-                   <select className="case" onChange={handleChange} value={data.ClientName} required>
+                   <select className="case" name="ClientName" onChange={handleChange} value={data.ClientName} required>
+                   <option >Select an Option</option>
                    {foodList.map((val)=>{
                      return(
                        <>
-                       <option  selected disabled hidden>Select an Option</option>
+                       
                        <option>{val.name}</option>
                      
                        </>
@@ -101,10 +107,21 @@ return (
                    
                     <label>Case number:</label> 
                     <input type="text" className='case' placeholder="Case number"name="cnumber" onChange={handleChange} value={data.cnumber} required/><br/>
-      
-                    <label> Case type:</label> 
-                    <input   type="text"  className='case' placeholder="Case Type" name="ctype" onChange={handleChange} value={data.ctype} required/><br/>
 
+
+                    <label> Case type:</label> 
+                          <select className="case" name="ctype" onChange={handleChange} value={data.ctype} required>
+                   <option >Select an Option</option>
+                   {caseType.map((val)=>{
+                     return(
+                       <>
+                       
+                       <option>{val.casetype}</option>
+                     
+                       </>
+                     );
+})}
+</select><br/>
                     </div></div> 
                     <div className='cright'>
                                                 <div className='cright1'>
