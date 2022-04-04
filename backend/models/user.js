@@ -2,6 +2,15 @@ const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const Joi = require("joi");
 const passwordComplexity = require("joi-password-complexity");
+// passwordComplexity().validate("aPassword123");
+
+const complexityOptions = {
+	min: 8,
+	max: 30,
+	lowerCase: 1,
+	
+	numeric: 1,
+  }; 
 
 const userSchema = new mongoose.Schema({
 	firstName: { type: String, required: true },
@@ -22,7 +31,7 @@ const validate = (data) => {
 	const schema = Joi.object({
 		firstName: Joi.string().required().label("First Name"),
 		email: Joi.string().email().required().label("Email"),
-		password: passwordComplexity().required().label("Password"),
+		password: passwordComplexity(complexityOptions).required().label("Password"),
 	});
 	return schema.validate(data);
 };

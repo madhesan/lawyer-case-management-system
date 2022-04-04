@@ -10,7 +10,7 @@ export default class Logout1 extends Component {
   render() {
     return (
         <div>
-            
+            <button onClick={logout}>logout</button>
         </div>
     )
   }
