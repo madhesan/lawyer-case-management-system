@@ -12,7 +12,7 @@
   .content-wrap  h1 {
     font-size: 1.375em;
     line-height: 100%;
-    color: #1b253d;
+    color: #EE9A86;
     font-weight: 500;
     margin: 0;
     padding: 0;
@@ -41,10 +41,11 @@
     grid-gap: 2em;
   }
   .content-wrap .info-boxes .info-box {
-    background: #fff;
+    
     height: 160px;
     display: flex;
     align-items: center;
+    text-align: left;
     justify-content: flex-start;
     padding: 0 3em;
     border: 1px solid #0c7a50;
@@ -72,4 +73,21 @@
   .content-wrap .info-boxes .info-box.active svg circle,
   .content-wrap .info-boxes .info-box.active svg path {
     fill: #4b84fe;
+  }
+  .info-box:hover{
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.6);
+  }
+  
+  .grad{
+    background-image: linear-gradient(#E7E3E2,#F6F6);
+    height: 102vh;
+    margin-left: -54px;
+    padding-left: 150px;
+  }
+  marquee{
+    height: 50px;
+            overflow: hidden;
+            position: relative;
+           
+            color: #333;
   }

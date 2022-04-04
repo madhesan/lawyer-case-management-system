@@ -7,7 +7,7 @@ const Dashboard=()=>
     return (
        
             
-    <div >
+    <div className="grad">
                 
                
 	
@@ -19,7 +19,7 @@ const Dashboard=()=>
 
 				<div class="info-box">
 					<div class="box-content">
-						<span class="big">44.51</span>
+						<span class="big">444.51</span>
 						Clients
 					</div>
 				</div>
@@ -44,13 +44,20 @@ const Dashboard=()=>
 						Appoinments
 					</div>
 				</div>
+				
+
+				<marquee>Hai</marquee>
 
               
 				
 			</section>
+			
+
+			
 
 		</div>
 	</main>
+	
 
 </div>    
 
