@@ -19,14 +19,14 @@ const Dashboard=()=>
 
 				<div class="info-box">
 					<div class="box-content">
-						<span class="big">444.51</span>
-						Clients
+						<span class="big">12</span>
+						My Clients
 					</div>
 				</div>
 				
 				<div class="info-box">
 					<div class="box-content">
-						<span class="big">132</span>
+						<span class="big">10</span>
 						Ongoing Cases
 					</div>
 				</div>
