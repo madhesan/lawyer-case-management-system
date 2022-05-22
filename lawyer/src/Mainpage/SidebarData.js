@@ -38,7 +38,7 @@ export const SidebarData =[
         icon:<EventAvailableIcon />,
         link:"/appointment"
     },{
-        title:"Settings",
+        title:"About",
         icon:<SettingsIcon />,
         link:"/setting"
     },
