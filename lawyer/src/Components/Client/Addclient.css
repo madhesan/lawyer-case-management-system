@@ -4,7 +4,7 @@
     margin-top:100px;
     width: 75%;
     padding: 12px 20px;
-    height:70px;
+    height:50px;
     margin: 8px 0;
     display: flex;
     border: 1px solid #ccc;
@@ -20,7 +20,7 @@
     margin-top:100px;
     width: 75%;
     padding: 12px 20px;
-    height:70px;
+    height:50px;
     margin: 8px 0;
     display: flex;
     border: 1px solid #ccc;
@@ -151,5 +151,55 @@
     width: 20%;
     height: 2em;
     margin-left: 5px;
+  }
+
+
+  .add-page1 .btn{
+    margin-right:30px;
+    float: right;
+    background: black;
+    color:aliceblue;
+    border: none;
+    width:100px;
+    height: 33px;
+    font-size: 15px;
+    text-transform:capitalize;
+    letter-spacing:1px ;
+    border-radius:25px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+  }
+  .add-page1 .btn1{
+    margin-right: 30px;
+    float: right;
+    background: black;
+    color:aliceblue;
+    border: none;
+    width:100px;
+    height: 33px;
+    font-size: 15px;
+    text-transform:capitalize;
+    letter-spacing:1px ;
+    border-radius:25px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+  }
+  .add-page1 .btn2{
+    margin-right: 5px;
+    float: right;
+    background: black;
+    color:aliceblue;
+    border: none;
+    width:100px;
+    height: 33px;
+    font-size: 15px;
+    text-transform:capitalize;
+    letter-spacing:1px ;
+    border-radius:25px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
   }
   

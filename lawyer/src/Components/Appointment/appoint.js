@@ -23,9 +23,10 @@ const Appoin1=()=>
             
             <h2>Appointment</h2>
             <Link to="/appointment2">
-            <button>Add Appointment</button>
+            {/* <button type="submit" className='ccbutton'>Add Client
+    </button> */}
+            <div class="addbtn">Add Appointment</div>
             </Link>
-           
             
     <tr>
 

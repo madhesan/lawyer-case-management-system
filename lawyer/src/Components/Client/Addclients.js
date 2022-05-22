@@ -52,108 +52,63 @@ const Addclients = () => {
 
      return (
             
-          <form onSubmit={handleSubmit}>
-                              
-            <div className='dash' >
-                <div className='wrapper'>
-                      <div className='center'>
-                          <div className='center1'>
-                              <FaUserAlt style={{color: 'red', fontSize: '50px'}}/><label className='client'>Client Registartion</label> 
-                        <input
-                        className='aname'
-                        type="text"
-                        placeholder="  Client Name"
-                        name="name"
-                        onChange={handleChange}
-                        value={data.name}
-                        required  />
-                        <br/>  
+               <form onSubmit={handleSubmit}>
+                            
+                   <div class="card">
+                     <div class="add-page1">
+                       </div>
+                       </div>
 
-                       <input
-
-                       type="text"
-                       className='fname'
-                       placeholder=" Father Name"
-                       name="fathername"
-                       onChange={handleChange}
-                       value={data.fathername}
-                       required
-                       /><br/> 
-                  
-                      <div className='radiobutton'>
-<input
-
-type="radio"
-className='radio'
-name="gender"
-onChange={handleChange}
-value="male"
-required
-
-/><span>Male</span>
- 	<input
-	type="radio"
-	className='radio'
-
-name="gender"
-onChange={handleChange}
-value="female"
-required
-
-/><span>Female</span><br/>
-
-
-</div></div> </div> 
-                                          <div className='right'>
-                                                <div className='right1'>
-                                                <input
-                  type="email"
-                  className='aname'
-                  placeholder="Email"
-                  name="email"
-                  onChange={handleChange}
-                  value={data.email}
-                  required
-
-                  /><br/>
-                                                <input
-type="textarea"
-className='aname'
-placeholder="Address"
-name="address"
-onChange={handleChange}
-value={data.address}
-required
-
-/><br/>
-
-<input
-                  type="text"
-                  className='aname'
-                  placeholder="Mobile No"
-                  name="mobileno"
-                  onChange={handleChange}
-                  value={data.mobileno}
-                  required
-
-                  /><br/>
-    <br/>
-                                                </div>                               
-                                                 </div> 
-                                                 {error && <div>{error}</div>}
-    
-    <button type="submit" className='button'>Add Client
-    </button>
-    <button type="button"className='button1'>Cancel</button>
- </div>
- 
- </div>
- </form>  
-    
+           </form>  
              )};
 
 
-export default Addclients
+export default Addclients 
+                       
+                       
+                       
+                      
+                        
+                     
+                       
+
+                      
+                       
+
+                      
+                       
+                       
+                       
+                      
+                        
+                  
+                          
+
+ 
+
+  
+
+
+
+
+
+
+
+
+                  
+                 
+                  
+             
+                  
+                
+                 
+
+                  
+  
+    
+
+    
+      
 
 
 

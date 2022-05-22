@@ -62,7 +62,8 @@ const Add=()=>{
 <div className='add'>
     <form onSubmit={handleSubmit}>
         <br/>
-        <h2>Add Appoinment</h2>
+        <div className='header'>
+        Add Appoinment</div>
     <div class="card">
         <div class="add-page">
             
@@ -70,11 +71,11 @@ const Add=()=>{
           
           
                <label for="fname">Client Name: </label><br/><br/>
-           <input type="text"  name="clientName" class="text-box" onChange={handleChange} value={data.clientName} required /><br/>
+           <input type="text"  name="clientName" class="text-box" onChange={handleChange} value={data.clientName} required placeholder='Client Name'/><br/>
            <div class="abcd">
                <div class="mobile">
           <label for="fname">Mobile No: </label><br/><br/>
-           <input type="text"  name="mobileno" onChange={handleChange} value={data.mobileno} required class="text-box1"/><br/>
+           <input type="text"  name="mobileno" onChange={handleChange} value={data.mobileno} required class="text-box1" placeholder='Mobile Number'/><br/>
            </div>
            <div class="date">
                <label for="fname">Date: </label> <br/><br/>
@@ -90,7 +91,7 @@ const Add=()=>{
           <textarea name="note" rows="5" placeholder="Your Message" onChange={handleChange} value={data.note} required></textarea><br/><br/><br/>
           
           {error && <div>{error}</div>}
-           <button type="submit" class="btn2">Save</button>
+           <button type="submit" class="btn2">Add</button>
            <button class="btn1">Cancel</button>
          
            <button class="btn" onClick={handleChange1} >Back</button>
