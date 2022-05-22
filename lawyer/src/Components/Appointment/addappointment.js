@@ -39,7 +39,7 @@ const Add=()=>{
       const url = "http://localhost:8080/api/users/addappoint";
      const { data: res } = await axios.post(url, data);
      localStorage.setItem("appoint",res.data);
-      navigate("");
+      navigate("/appointment");
       
               
      } catch (error) {
@@ -91,7 +91,11 @@ const Add=()=>{
           <textarea name="note" rows="5" placeholder="Your Message" onChange={handleChange} value={data.note} required></textarea><br/><br/><br/>
           
           {error && <div>{error}</div>}
+<<<<<<< HEAD
            <button type="submit" class="btn2">Add</button>
+=======
+           <button type="submit" class="btn2" onClick={handleChange1}>Save</button>
+>>>>>>> 292dafd459cdf45e9d097cba695f4a60de635033
            <button class="btn1">Cancel</button>
          
            <button class="btn" onClick={handleChange1} >Back</button>

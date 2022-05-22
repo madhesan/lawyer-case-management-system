@@ -38,14 +38,14 @@ export const SidebarData =[
         icon:<EventAvailableIcon />,
         link:"/appointment"
     },{
-        title:"Settings",
+        title:"About",
         icon:<SettingsIcon />,
-        link:"/settings"
+        link:"/setting"
     },
     {
         title:"Logout",
         icon:<LogoutIcon/>,
-        link:"/login",
+        link:"/",
         onclick:{handleLogout}
         
     },

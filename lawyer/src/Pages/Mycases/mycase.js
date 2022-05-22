@@ -1,9 +1,7 @@
 import React from "react";
 import "./mycase.css";
 import Sidebar from '../../Mainpage/Sidebar';
-
-
-import Addcases from "../../Components/Cases/addcase";
+import Viewcase from "../../Components/Cases/viewcases";
 
 const Mycase=()=>
 
@@ -12,7 +10,7 @@ const Mycase=()=>
           
     <div className="content">
         <div className="side">    < Sidebar/></div>
-        <div className="dash"> <Addcases/></div>
+        <div className="dash"> <Viewcase/></div>
 
 </div>    
 

@@ -13,11 +13,12 @@ const Appoin1=()=>
         setFoodList(response.data);
         console.log(response.data);
       });
-    }, []) ;
+    }, ) ;
   
 
    
     return (
+<<<<<<< HEAD
 
         <table> 
             
@@ -51,9 +52,73 @@ const Appoin1=()=>
         </tr>  
     //   </div>
       );
+=======
+      <div >
+
+      <div class="container">
+          <div class="row">
+              <div class="col-md-offset-1 col-md-10">
+                  <div class="panel">
+                      <div class="panel-heading">
+                          <div class="row">
+                              <div class="col-sm-12 col-xs-12">
+                                <Link to="/appointment2">  <button class="btn btn-sm btn-primary pull-left"  ><i class="fa fa-plus-circle"> Add New</i></button> </Link>
+                                 
+                              </div>
+                          </div>
+                      </div>
+                      <div class="panel-body table-responsive">
+                      <table class="table">
       
- })}
-</table>
+      <thead>
+          <tr>
+              <th class="text-center">S No</th>
+              <th class="text-center">Client Name</th>
+              <th class="text-center">Mobile No</th>
+              <th class="text-center">Date</th>
+              <th class="text-center">Time</th>
+              <th class="text-center">Actions</th>
+          </tr>
+      </thead>
+      
+      <tbody>
+      {foodList.map((val,key) => {
+return(
+          <tr>
+              <td class="text-center">1</td>
+              <td class="text-center">{val.clientName}</td>
+              <td class="text-center">{val.mobileno}</td>
+              <td class="text-center">{val.date}</td>
+              <td class="text-center">{val.time}</td>
+              
+              <td class="td-actions text-center">
+                  
+                  <button type="button" rel="tooltip" class="btn btn-success btn-just-icon btn-sm" data-original-title="" title="">
+                      <i class="material-icons">edit</i>
+                  </button>
+                  <button type="button" rel="tooltip" class="btn btn-danger btn-just-icon btn-sm" data-original-title="" title="">
+                      <i class="material-icons">delete</i>
+                  </button>
+              </td>
+          </tr>
+          );
+
+        })}
+>>>>>>> 292dafd459cdf45e9d097cba695f4a60de635033
+      
+         
+          
+      </tbody>
+      </table>
+                      </div>
+                      <div class="panel-footer">
+                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
 
 );
   
@@ -62,119 +127,3 @@ const Appoin1=()=>
 
 export default Appoin1;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import * as React from 'react';
-// import { styled } from '@mui/material/styles';
-// import Table from '@mui/material/Table';
-// import TableBody from '@mui/material/TableBody';
-// import TableCell, { tableCellClasses } from '@mui/material/TableCell';
-// import TableContainer from '@mui/material/TableContainer';
-// import TableHead from '@mui/material/TableHead';
-// import TableRow from '@mui/material/TableRow';
-// import Paper from '@mui/material/Paper';
-// import {Link} from "react-router-dom";
-// import {useState,useEffect} from "react";
-// import Axios from 'axios';
-// import MaUTable from '@material-ui/core/Table'
-
-
-
-
-
-// export default function CustomizedTables() {
-//     const User = localStorage.getItem("token");
-//     const [foodList,setFoodList] = useState([])
-
-//     useEffect(() => {
-//       Axios.get(`http://localhost:8080/api/users/readappoint/${User}`).then((response) => {
-//         setFoodList(response.data);
-//         console.log(response.data);
-//       });
-//     }, []) ;
-  
-   
-    
-//   return (
-//     <MaUTable >
-//     <TableHead>
-//       <TableRow>
-//           <TableCell>No</TableCell>
-//           <TableCell>Client Name</TableCell>
-//           <TableCell>Mobile No</TableCell>
-//           <TableCell>Date</TableCell>
-//           <TableCell>Time</TableCell>
-//       </TableRow>
-//     </TableHead>
-//     <TableBody>
-//     {foodList.map((row) => (
-//             <TableRow>
-//                 <TableCell>{1}</TableCell>
-//                 <TableCell>{row.clientName}</TableCell>
-//                 <TableCell>{row.mobileno}</TableCell>
-//                 <TableCell>{row.date}</TableCell>
-//                 <TableCell>{row.time}</TableCell>
-//             </TableRow>
-//           ))}
-//       </TableBody>
-//     </MaUTable>
-//   );
-// }

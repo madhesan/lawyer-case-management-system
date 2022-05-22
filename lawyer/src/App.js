@@ -18,11 +18,15 @@ import Add from "./Components/Appointment/addappointment";
 
 
 
-import Addcases from "./Components/Cases/addcase";
+
 
 
 import Mycase from "./Pages/Mycases/mycase";
 import Appointment2 from "./Pages/Appointment/appoin1";
+import Setting1 from "./Pages/Settings/setting1";
+import Testing from "./Components/Testing/testing";
+import Addcase from "./Pages/Mycases/addcase";
+
 
 
 
@@ -43,13 +47,18 @@ const App=()=>{
 <Route path="/appointment" exact element={<Appointment1/>}/>
 <Route path="/appointment2" exact element={<Appointment2/>}/>
 <Route path="/app" exact element={<Appoin1/>}/>
-<Route path="/addcase" exact element={<Addcases/>}/>
+<Route path="/addcase" exact element={<Addcase/>}/>
 <Route path="/mycase" exact element={<Mycase/>}/>
+<Route path="/setting" exact element={<Setting1/>}/>
+<Route path="/testing" exact element={<Testing/>}/>
+
 
 
 
     </Routes>
     )
 };
+
+
 
 export default App;
