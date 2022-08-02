@@ -71,11 +71,7 @@
     text-decoration: none;
     position: absolute;
     left: 600px;
-<<<<<<< HEAD
     top: 600px;
-=======
-    top: 670px;
->>>>>>> 292dafd459cdf45e9d097cba695f4a60de635033
     outline: none;
     color: #fff;
     background-color: #4CAF50;
@@ -99,13 +95,8 @@
     text-align: center;
     text-decoration: none;
     position: absolute;
-<<<<<<< HEAD
     left: 900px;
     top: 600px;
-=======
-    left: 800px;
-    top: 670px;
->>>>>>> 292dafd459cdf45e9d097cba695f4a60de635033
     outline: none;
     color: #fff;
     background-color: darkcyan;

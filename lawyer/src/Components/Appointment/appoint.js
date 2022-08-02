@@ -1,10 +1,9 @@
-
 import './add.css';
 import {Link} from "react-router-dom";
 import React, {useState,useEffect} from "react";
 import Axios from 'axios';
 const Appoin1=()=>
-{ //
+{
     const User = localStorage.getItem("token");
     const [foodList,setFoodList] = useState([])
 
@@ -18,41 +17,6 @@ const Appoin1=()=>
 
    
     return (
-<<<<<<< HEAD
-
-        <table> 
-            
-            <h2>Appointment</h2>
-            <Link to="/appointment2">
-            {/* <button type="submit" className='ccbutton'>Add Client
-    </button> */}
-            <div class="addbtn">Add Appointment</div>
-            </Link>
-            
-    <tr>
-
-        <th>Client Name</th>
-        <th>Mobile No</th>
-        <th>Date</th>
-        <th>Time</th>
-    </tr>
- 
-{foodList.map((val,key) => {
-   return(
-     
-   
-    //   <div key={key} > 
-     
-        <tr>
-        
-        <td>{val.clientName}</td>
-        <td>{val.mobileno}</td>
-        <td>{val.date}</td>
-        <td>{val.time}</td>
-        </tr>  
-    //   </div>
-      );
-=======
       <div >
 
       <div class="container">
@@ -104,7 +68,6 @@ return(
           );
 
         })}
->>>>>>> 292dafd459cdf45e9d097cba695f4a60de635033
       
          
           
@@ -126,4 +89,3 @@ return(
 }
 
 export default Appoin1;
-

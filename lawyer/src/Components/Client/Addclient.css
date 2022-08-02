@@ -1,160 +1,11 @@
 
-.aname{
-    font-size:25px;
-    margin-top:100px;
-    width: 75%;
-    padding: 12px 20px;
-    height:50px;
-    margin: 8px 0;
-    display: flex;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    display:flex;
-    cursor: pointer;
-    background-color: cadetblue; 
-  }
-  .fname{
-  
-    font-size:25px;
-    margin-top:100px;
-    width: 75%;
-    padding: 12px 20px;
-    height:50px;
-    margin: 8px 0;
-    display: flex;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    display:flex;
-    cursor: pointer;
-    background-color: cadetblue;
-  }
-  
-  
-  .address{
-    font-size:25px;
-    margin-top:100px;
-    width: 75%;
-    padding: 12px 20px;
-    height:70px;
-    margin: 8px 0;
-    display: flex;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    display:flex;
-    cursor: pointer;
-    /* background-color: cadetblue; */
-    
-  }
-  .button {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    position: absolute;
-    left: 600px;
-    top: 500px;
-    outline: none;
-    color: #fff;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 15px;
-    
-  }
-  
-  .button:hover {background-color: #3e8e41}
-  
-  .button:active {
-    background-color: #3e8e41;
-   
-    transform: translateY(4px);
-  }
-  .button1 {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    position: absolute;
-    left: 800px;
-    top: 500px;
-    outline: none;
-    color: #fff;
-    background-color: darkcyan;
-    border: none;
-    border-radius: 15px;
-   
-  }
-  .client{
-    font-size: 25px;
-    color: black;
-    font-weight: bold;
-    margin-left: 10px;
-  }
-  
-  .button1:hover {background-color:rgb(211, 83, 9)}
-  
-  .button1:active {
-    background-color:darkcyan;
-    
-    transform: translateY(4px);
-  }
-  
-  
-  
-  
-  .dash{
-    height: 60px;
-  }
-  .wrapper{
-    padding: 0px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .center{
-    flex: 2;
-  }
-  
-  .center{
-    margin-left:30px;
-    margin-top:50px;
-    padding:50px;
-  }
-  
-  .right{
-    flex:2;
-   
-  }
-  .right{
-   
-      margin-left:30px;
-      margin-top:104px;
-      padding:50px;
-  }
-  .radiobutton{
-    margin-top: 20px;
-    font-size: 20px;
-    margin-bottom: 5px;
-    cursor: pointer;
-    padding: 2px;
-    display: flex;
-    
-  }
-  input[type=radio] {
-    cursor: pointer;
-    border: 0px;
-    width: 20%;
-    height: 2em;
-    margin-left: 5px;
-  }
-
-
-  .add-page1 .btn{
+  /*Add appoinment page*/
+.header{
+  font-family: Copperplate, Papyrus, fantasy;
+  font-size: 40px;
+  text-align: center;
+}
+.add-page .btn{
     margin-right:30px;
     float: right;
     background: black;
@@ -170,7 +21,7 @@
     transition: 0.3s;
     transition-property: background;
   }
-  .add-page1 .btn1{
+  .add-page .btn1{
     margin-right: 30px;
     float: right;
     background: black;
@@ -186,7 +37,7 @@
     transition: 0.3s;
     transition-property: background;
   }
-  .add-page1 .btn2{
+  .add-page .btn2{
     margin-right: 5px;
     float: right;
     background: black;
@@ -202,4 +53,178 @@
     transition: 0.3s;
     transition-property: background;
   }
+  
+  .add-page textarea{
+    background:darkseagreen;
+    color: black;
+    border: none;
+    width: 57%;
+    padding: 3px;
+    font-size: 15px;
+    min-height: 10px;
+    max-height: 120px;
+    resize: vertical;
+    border-radius: 7px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1px;
+    opacity: 0.9;
+  }
+  
+  .client-box{
+    background:darkseagreen;
+    color: black;
+    border: none;
+    width: 160px;
+    height: 40px;
+    padding: 13px;
+    font-size: 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    opacity: 0.9;
+  }
+  .text-box1{
+    background:darkseagreen;
+    color: black;
+    border: none;
+    width: 160px;
+    height: 40px;
+    padding: 13px;
+    font-size: 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    opacity: 0.9;
+  }
+  .text-box2{
+    background:darkseagreen;
+    color: black;
+    border: none;
+    width: 155px;
+    height: 40px;
+    padding: 13px;
+    font-size: 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    opacity: 0.9;
+  }
+  .emailbox{
+    background:darkseagreen;
+    color: black;
+    border: none;
+    width: 200px;
+    height: 40px;
+    padding: 13px;
+    font-size: 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    opacity: 0.9;
+    cursor: pointer;
+  }
+ 
+  
+
+  
+  .add-page .text-box:first-child{
+    margin-right: 100px;
+  }
+  
+  .add-page{
+    max-width: 1000px;
+    margin-left: 10vh;
+    flex: 1;
+  }
+
+  .rbtn{
+    margin-left: 350px;
+  }
+  .add h2{
+    text-align: left;
+    margin-left: 380px;
+    margin-top: 70px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .card{
+    flex:1 1 20rem;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    margin:10px 20px;
+    flex-direction: row;
+    background: #fff;
+    box-shadow: 0 0 15px rgb(0,0,0,0.4);
+    padding:20px;
+    align-self: normal;
+    margin-top: 5vh;
+    margin-right: 200px;
+    margin-left: 60px;
+  }
+  .card h2{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 10px;
+    margin-left: -50vh;
+  }
+    .caname{
+      flex: 1;
+    }
+    .row1{
+      display: flex;
+    }
+    .client-gender{
+      flex: 1;
+    }
+    .row2{
+      display: flex;
+    }
+    .faname{
+      flex: 1;
+    }
+    .mobile{
+      flex: 1;
+    }
+    .client-email{
+      flex: 1;
+    }
+    .addbtn {
+      display: inline-block;
+      padding: 9px 25px;
+      font-size: 17px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      position: absolute;
+      left: 500px;
+      top: 2px;
+      outline: none;
+      color: #fff;
+      background-color:#3e8e41;
+      border: none;
+      border-radius: 15px;
+      
+    }
+    
+    .addbtn:hover {background-color: #3e8e41}
+    
+    .addbtn:active {
+      background-color: #3e8e41;
+     
+      transform: translateY(4px);
+    }
+    /*Appoin page*/
+    .container{
+      margin-left: 10%;
+      margin-top: 7%;
+  }
+
+
+
+  
+  
+ 
+  
+  
+  
   
