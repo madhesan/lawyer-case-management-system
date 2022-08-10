@@ -70,8 +70,13 @@ const Addcases = () => {
         <div className='cwrapper'>
           <div className='ccenter'>
             <div className='ccenter1'>
-
+            <div className='header'>
+          Client registartion</div>
+             <div class="card">
+             
+              <div class="cli">
               <label>Client Name :</label>
+              <br />
               <select className="case" name="ClientName" onChange={handleChange} value={data.ClientName} required>
                 <option >Select an Option</option>
                 {foodList.map((val) => {
@@ -84,37 +89,57 @@ const Addcases = () => {
                   );
                 })}
 
-              </select><br />
-
+              </select>
+              </div>
+              <br/>
+              <div class="flex">
+                <div class="resp">
               <label>Respondent name  :</label>
-              <input type="text" className='case' placeholder="Respondent nmae" name="rname" onChange={handleChange} value={data.rname} required /><br />
-              <labe>FIR Number</labe>
-              <input type="text" className='case' placeholder='FIR Number' name="firnumber" onChange={handleChange} value={data.firnumber} required /><br />
-
+              <br/>
+             <input type="text" className='case' placeholder="Respondent name" name="rname" onChange={handleChange} value={data.rname} required /><br />
+              </div>
+              <div class="rad">
               <div className='cradiobutton'>
                 <input type="radio" className='cradio' name="porr" value="petitioner" onChange={handleChange} required />
-                <label for="html">Petitioner</label><br />
+                <label for="html">Petitioner</label><br />   <pre/>
                 <input type="radio" className='cradio' name="porr" value="respondent" onChange={handleChange} required />
                 <label for="css">Respondent</label><br /></div>
-
-
+              </div>
+              </div>
+              <div class="flex1">
+              <div class="fir">
+              <label>FIR Number :</label>
+              <br/>
+              <input type="text" className='case' placeholder='FIR Number' name="firnumber" onChange={handleChange} value={data.firnumber} required /><br />
+              </div>
+              
+             <div class="case-num">
               <label>Case number:</label>
+              <br/>
               <input type="text" className='case' placeholder="Case number" name="cnumber" onChange={handleChange} value={data.cnumber} required /><br />
+              </div>
+              </div>
 
-
-            </div></div>
+            
           <div className='cright'>
             <div className='cright1'>
+              <div class="flex2">
+                <div class="court">
               <label>Court Name</label>
+              <br/>
               <input type="text" className='case' placeholder="Court name" name="courtname" onChange={handleChange} value={data.courtname} required /><br />
-
+              </div>
+              <div class="fil">
               <label>Filing Date</label>
+              <br/>
               <input type="date" className='case' name='fdate' onChange={handleChange} value={data.fdate} required /><br />
-
-
+              </div>
+              <div class="hearing">
               <label>Hearing Date</label>
+              <br/>
               <input type="date" className='case' name="hdate" onChange={handleChange} value={data.hdate} required /><br />
-
+              </div>
+              </div>
 
 
 
@@ -131,9 +156,12 @@ const Addcases = () => {
               <button className='cbutton1'>Reset</button>
 
               <br />
+              </div>
             </div>
           </div>
         </div>
+      </div>
+      </div>
       </div>
 
     </form>
