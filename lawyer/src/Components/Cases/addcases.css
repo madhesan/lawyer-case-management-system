@@ -18,7 +18,7 @@
     box-shadow: 0 0 15px rgb(0,0,0,0.4);
     padding:20px;
     align-self: normal;
-    margin-top: 2vh;
+    margin-top: 1vh;
     margin-right: 200px;
     margin-left: 60px;
     padding-left: 3em;
@@ -53,6 +53,22 @@
       margin-top:0px;
       padding:1px;
   }
+  .comment textarea{
+    background:darkseagreen;
+    color: white;
+    border: none;
+    width: 30%;
+    padding: 3px;
+    font-size: 15px;
+    min-height: 10px;
+    max-height: 70px;
+    resize: vertical;
+    border-radius: 7px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1px;
+    opacity: 0.9;
+  }
+
 
   .case {
       font-size: 15px;
@@ -98,7 +114,7 @@
     text-decoration: none;
     position: absolute;
     left: 600px;
-    top: 590px;
+    top: 600px;
     outline: none;
     color: #fff;
     background-color: #4CAF50;
@@ -123,7 +139,7 @@
     text-decoration: none;
     position: absolute;
     left: 790px;
-    top: 590px;
+    top: 600px;
     outline: none;
     color: #fff;
     background-color: darkcyan;
@@ -188,3 +204,4 @@
     flex:1;
     padding-right: 20em;
   }
+  

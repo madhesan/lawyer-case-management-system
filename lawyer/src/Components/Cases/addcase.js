@@ -142,11 +142,12 @@ const Addcases = () => {
               </div>
 
 
-
+              <div class="comment">
               <label>Comment on Cases:</label>
               <br></br>
-              <textarea rows="4" cols="50" className='case' name="comment" placeholder='Comment on cases ' onChange={handleChange} value={data.comment} required />
+              <textarea  className='case' name="comment" placeholder='Comment on cases ' onChange={handleChange} value={data.comment} required />
               <br />
+              </div>
 
 
               {error && <div>{error}</div>}
