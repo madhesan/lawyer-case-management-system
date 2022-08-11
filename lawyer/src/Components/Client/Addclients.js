@@ -30,7 +30,7 @@ const Addclients = () => {
 
  const handleSubmit = async (e) => {
 	window.location.reload();
-    alert(`${data.name} Registered Successfully !!!!`)
+    // alert(`${data.name} Registered Successfully !!!!`)
   e.preventDefault();
   try {
    const url = "http://localhost:8080/api/users/add";
@@ -71,12 +71,14 @@ const Addclients = () => {
             
              <div class="client-gender">
              <label for="cgender" >Client Gender:</label><br/>
-                <select name="cars" id="cars">
-             <option value="none" disabled>Select the Gender</option>
-              <option value="male">Male</option>
-             <option value="female">Female</option>
-              
-              </select>
+               
+             <select className="text-box1" name="gender" onChange={handleChange}  value={data.gender} required>
+                <option >Select an Option</option>
+                <option >Male</option>
+                <option >Female</option>
+             
+                </select><br />
+               
              </div>
              </div> 
              <div class="row2">

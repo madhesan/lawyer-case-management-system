@@ -5,6 +5,7 @@ const bcrypt = require("bcrypt");
 const Appointment = require("../models/appointment");
 const cases = require("../models/cases");
 const setting = require("../models/setting");
+// const client = require("../models/client");
 
 router.post("/", async (req, res) => {
 	try {
@@ -61,7 +62,7 @@ router.get('/readappoint/:id',async (req,res) => {
 					res.send(err)
 				}
 				res.send(data);
-				// console.log("aaa",data);
+				console.log("aaa",data);
 			})
 		});
 
@@ -76,6 +77,7 @@ router.get('/readcase/:id',async (req,res) => {
 			res.send(err)
 		}
 		res.send(data);
+		console.log(data);
 	})
 });
 		
@@ -91,9 +93,76 @@ router.get('/readcase/:id',async (req,res) => {
 				res.send(err)
 			}
 			res.send(data);
-			// console.log("aaa",data);
+			
 		})
 	});
+//count client
+
+router.get('/countClients/:id', async (req,res)=> {
+	try{
+
+	
+	const count=await Client.find({lawyer:req.params.id}).count()
+	console.log(count)
+	res.status(200).json(count);
+	}
+	catch(error){
+		console.log(error)
+		res.status(500).json(error)
+		
+	}
+})
+
+//count Cases
+
+router.get('/countCases/:id', async (req,res)=> {
+	try{
+
+	const count=await cases.find({lawyer:req.params.id}).count()
+	console.log(count)
+	res.status(200).json(count);
+	}
+	catch(error){
+		console.log(error)
+		res.status(500).json(error)
+		
+	}
+})
+
+
+
+//count Upcomingcase
+router.get('/Upcomingcases/:id', async (req,res)=> {
+	try{
+		const count=await cases.find({rname:"No",lawyer:req.params.id}).count()
+	console.log(count)
+	res.status(200).json(count);
+	}
+	catch(error){
+		console.log(error)
+		res.status(500).json(error)
+		
+	}
+})
+   
+//count Completedcase
+
+router.get('/CompletedCases/:id', async (req,res)=> {
+	try{
+
+	const count=await cases.find({rname:"Yes",lawyer:req.params.id}).count()
+	console.log(count)
+	res.status(200).json(count);
+	}
+	catch(error){
+		console.log(error)
+		res.status(500).json(error)
+		
+	}
+})
+
+
+
 
 //case type dropdown
 
