@@ -43,12 +43,12 @@ const Viewcase = () => {
   return (
     <div style={containerStyle}>
       <div style={gridStyle} className="ag-theme-alpine">
-      <div class="col-sm-12 col-xs-12">
-                                       <Link to="/addcase">  <button class="btn btn-sm btn-primary pull-left"  ><i class="fa fa-plus-circle"> Add New</i></button> </Link>
+              <div class="col-sm-12 col-xs-12">
+                  <Link to="/addcase">  <button class="btn btn-sm btn-primary pull-left"  ><i class="fa fa-plus-circle"> Add New</i></button> </Link>
 
-                                   </div>
+              </div>
         <AgGridReact
- 
+
           rowData={rowData}
           columnDefs={columnDefs}
         //   rowHeight={100}

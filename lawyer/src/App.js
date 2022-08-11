@@ -14,13 +14,6 @@ import Appointment1 from "./Pages/Appointment/appoin";
 import Appoin1 from "./Components/Appointment/appoint";
 import Add from "./Components/Appointment/addappointment";
 
-
-
-
-
-
-
-
 import Mycase from "./Pages/Mycases/mycase";
 import Appointment2 from "./Pages/Appointment/appoin1";
 import Setting1 from "./Pages/Settings/setting1";
